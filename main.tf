@@ -7,7 +7,5 @@
 #    - storage-aks-azure-file-share-storage-class.tf 
 #  - Namespace
 #    - namespace-aks-cluster-production-ns.tf 
-#  - Static IP:
-#    - static-ip-aks-cluster-production-ip.tf
 # todo: add the others
 # ---------------------------------------------------------------------------------------------------------------------
