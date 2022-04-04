@@ -1,4 +1,4 @@
-resource "kubernetes_namespace" "production_ns" {
+resource "kubernetes_namespace_v1" "production_ns" {
   metadata {
     annotations = {}
     labels      = {}
