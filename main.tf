@@ -9,3 +9,11 @@
 #    - namespace-aks-cluster-production-ns.tf 
 # todo: add the others
 # ---------------------------------------------------------------------------------------------------------------------
+terraform {
+  required_providers {
+    kubectl = {
+      source  = "gavinbunney/kubectl"
+      #version = ">= 1.7.0"
+    }
+  }
+}
