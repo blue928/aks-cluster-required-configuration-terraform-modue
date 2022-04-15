@@ -32,7 +32,7 @@ resource "helm_release" "cert-manager" {
 # for a better solution that doesn't require a 2nd apply.
 
 # TODO - add this to its own file?
-resource "kubernetes_manifest" "clusterissuer_letsencrypt_prod" {
+/*resource "kubernetes_manifest" "clusterissuer_letsencrypt_prod" {
   manifest = {
     "apiVersion" = "cert-manager.io/v1"
     "kind"       = "ClusterIssuer"
