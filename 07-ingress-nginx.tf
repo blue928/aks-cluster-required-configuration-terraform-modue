@@ -26,7 +26,8 @@ resource "helm_release" "ingress_nginx" {
   set {
     name = "controller.service.loadBalancerIP"
     #value = azurerm_public_ip.lb_public_ip.ip_address
-    value = module.aks-cluster.lb_public_ip
+    #value = module.aks-cluster.lb_public_ip
+    value = "var.lb_public_ip"
   }
 
   #depends_on = [
