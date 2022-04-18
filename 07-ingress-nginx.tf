@@ -2,6 +2,7 @@ resource "helm_release" "ingress_nginx" {
   name       = "ingress-nginx"
   repository = "https://kubernetes.github.io/ingress-nginx"
   chart      = "ingress-nginx"
+  version = "4.0.19"
 
   # todo change this to a variable
   namespace        = "ingress-nginx"
