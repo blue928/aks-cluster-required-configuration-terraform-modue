@@ -1,4 +1,4 @@
-resource "helm_release" "ingress_nginx" {
+/*resource "helm_release" "ingress_nginx" {
   name       = "ingress-nginx"
   repository = "https://kubernetes.github.io/ingress-nginx"
   chart      = "ingress-nginx"
@@ -9,7 +9,7 @@ resource "helm_release" "ingress_nginx" {
   create_namespace = true
   timeout          = 1200
   #atomic  = true
-  cleanup_on_fail = true
+  #cleanup_on_fail = true
 
   #values = [file("nginx_ingress_values.yaml")]
 
@@ -35,4 +35,4 @@ resource "helm_release" "ingress_nginx" {
   #  module.aks-cluster-required-config,
   #]
 
-}
+}*/
