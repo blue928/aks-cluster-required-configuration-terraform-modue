@@ -7,7 +7,7 @@ resource "helm_release" "ingress_nginx" {
   # todo change this to a variable
   namespace        = "ingress-nginx"
   create_namespace = true
-  timeout          = 600
+  timeout          = 1200
   #atomic  = true
   cleanup_on_fail = true
 
