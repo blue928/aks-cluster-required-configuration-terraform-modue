@@ -1,4 +1,4 @@
-resource "helm_release" "cert-manager" {
+/*resource "helm_release" "cert-manager" {
   name       = "cert-manager"
   repository = "https://charts.jetstack.io"
   chart      = "cert-manager"
@@ -65,7 +65,7 @@ resource "kubernetes_manifest" "clusterissuer_letsencrypt_prod" {
     #module.aks-cluster-required-config,
     helm_release.cert-manager,
   ]
-}
+}*/
 
 /*
 # See:
