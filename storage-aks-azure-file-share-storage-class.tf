@@ -23,7 +23,7 @@ resource "kubernetes_storage_class_v1" "aks_file_share_custom_sc" {
   }
 
   storage_provisioner = "file.csi.azure.com"
-  reclaim_policy      = "Retain"
+  reclaim_policy      = "Delete"
   volume_binding_mode = "WaitForFirstConsumer"
   parameters = {
     skuName  = "Standard_LRS"
