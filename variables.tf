@@ -8,7 +8,7 @@ variable "storage_class_cluster_location" {
   description = "The cluster's geolocation"
 }
 
-variable "lb_public_ip" {
-  type        = string
-  description = "The public IP address of the load balancer"
-}
+#variable "lb_public_ip" {
+#  type        = string
+#  description = "The public IP address of the load balancer"
+#}
